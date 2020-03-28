@@ -1,0 +1,33 @@
+{
+  "appName": {
+    "message": "Calm Twitter",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "calm-twitter",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "This extension hides trending information from twitter timelines to make your mind calm.",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "Calm Twitter",
+    "description": "The title of the browser action button"
+  },
+  "titleIsExploreHidden": {
+    "message": "Hide explore tab"
+  },
+  "titleIsTrendsHidden": {
+    "message": "Hide trends and who to follow from right column"
+  },
+  "titleIsReactionNumberHidden": {
+    "message": "Hide numbers of replies, retweets, and likes"
+  },
+  "titleShowCalmText": {
+    "message": "Show \"Calm\" next to the logo"
+  },
+  "textCalm": {
+    "message": "Calm"
+  }
+}

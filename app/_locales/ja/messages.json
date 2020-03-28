@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "おだやかTwitter",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "この拡張機能はTwitterのタイムラインからトレンド情報を隠して、あなたの心を穏やかにしてくれます。",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "おだやかTwitter",
+    "description": "The title of the browser action button"
+  },
+  "titleIsExploreHidden": {
+    "message": "話題を検索タブを隠す"
+  },
+  "titleIsTrendsHidden": {
+    "message": "おすすめトレンド、ユーザーを隠す"
+  },
+  "titleIsReactionNumberHidden": {
+    "message": "ツイートへのリプライ、リツイート、いいね数を隠す"
+  },
+  "titleShowCalmText": {
+    "message": "ロゴの隣に「おだやか」を表示する"
+  },
+  "textCalm": {
+    "message": "おだやか"
+  }
+}
