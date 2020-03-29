@@ -12,7 +12,7 @@ This extension hides trending information from twitter timelines to make your mi
 4. Show "Calm" next to the Twitter logo
 
 ## Requirement
-This extension is developed using [Chrome Extension TypeScript Starter](github.com/chibat/chrome-extension-typescript-starter).
+This extension is developed using [Chrome Extension TypeScript Starter](https://github.com/chibat/chrome-extension-typescript-starter).
 
 ## License
 MIT License
