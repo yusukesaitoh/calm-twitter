@@ -6,20 +6,20 @@ body {
     }
 
     &.isTrendsHidden {
-        div[data-testid="sidebarColumn"] div.css-1dbjc4n.r-1l5qxre.r-m611by > div:not(:first-child):not(:last-child) {
+        div[data-testid="sidebarColumn"] > div > div > div > div > div.css-1dbjc4n > div:not(:first-child):not(:last-child) {
             display: none !important;
         }
-        div[data-testid="sidebarColumn"] div.css-1dbjc4n.r-1l5qxre.r-m611by > div:last-child {
+        div[data-testid="sidebarColumn"] > div > div > div > div > div.css-1dbjc4n > div:last-child {
             margin-top: 60px !important;
         }
     }
 
     &.isReactionNumberHidden {
-        div[data-testid="primaryColumn"] article div.r-1mdbhws span.r-1n0xq6e {
+        div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
             opacity: 0 !important;
             transition-property: transform, opacity !important;
         }
-        div[data-testid="primaryColumn"] article:hover div.r-1mdbhws span.r-1n0xq6e {
+        div[data-testid="primaryColumn"] article:hover div[role="group"] div[role="button"] span {
             opacity: 1 !important;
         }
     }
@@ -28,8 +28,8 @@ body {
         header[role="banner"] h1[role="heading"] {
             &::after {
                 position: absolute;
-                left: 56px;
-                top: 15px;
+                left: 3.75em;
+                top: 1em;
                 display: inline-block;
                 width: 120px;
                 font-weight: 700;
