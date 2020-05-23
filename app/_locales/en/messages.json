@@ -27,6 +27,15 @@
   "titleShowCalmText": {
     "message": "Show \"Calm\" next to the logo"
   },
+  "titleIsFollowerNumberHidden": {
+    "message": "Hide number of followers"
+  },
+  "titleIsReactionNumberAlwaysHidden": {
+    "message": "Hide numbers of replies, retweets, and likes when mouse cursor is hovered"
+  },
+  "titleAdditionalSettings": {
+    "message": "Additional settings"
+  },
   "textCalm": {
     "message": "Calm"
   }
