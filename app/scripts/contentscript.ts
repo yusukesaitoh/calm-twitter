@@ -1,5 +1,6 @@
 toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText"]);
 addCalmTitle();
+setTimeout(changeCalmColor, 50);
 
 function toggleClass(keys: string[]) {
             if (typeof data[key] === "undefined") {
@@ -31,4 +32,16 @@ function addCalmTitle() {
   head.appendChild(style);
   style.type = 'text/css';
   style.appendChild(document.createTextNode(css));
+}
+
+function changeCalmColor() {
+  let body = document.body || document.getElementsByTagName('body')[0];
+  if (body.style.backgroundColor !== 'rgb(255, 255, 255)') {
+    let css = "body.showCalmText header[role=\"banner\"] h1[role=\"heading\"]::after { color: rgb(255, 255, 255);}";
+    let head = document.head || document.getElementsByTagName('head')[0];
+    let style = document.createElement('style');
+    head.appendChild(style);
+    style.type = 'text/css';
+    style.appendChild(document.createTextNode(css));
+  }
 }
