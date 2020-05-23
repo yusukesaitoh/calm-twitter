@@ -6,9 +6,9 @@ function toggleClass(keys: string[]) {
         keys.forEach(key => {
             if (typeof data[key] === "undefined") {
                 data[key] = true;
-            }        
+            }
             let body = document.getElementsByTagName('body')[0];
-        
+
             if (data[key]) {
                 body.classList.add(key);
             } else {
@@ -21,6 +21,8 @@ function toggleClass(keys: string[]) {
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
     toggleClass([request.key]);
 });
+
+chrome.runtime.sendMessage({ from: 'content', subject: 'showPageAction' });
 
 function addCalmTitle() {
     let calmText = chrome.i18n.getMessage("textCalm");
