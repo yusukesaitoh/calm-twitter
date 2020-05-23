@@ -1,35 +1,51 @@
 html {
-    font-family: sans-serif;
-    font-size: 14px;
+  font-family: sans-serif;
+  font-size: 11px;
 }
 
 body {
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    background: white;
-    width: 240px;
+  font-size: 1rem;
+}
+
+body {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  width: 240px;
 }
 
 h1 {
-    font-size: 1rem;
-    padding: 10px;
-    margin: 0;
-    line-height: 1em;
-    border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  padding: 20px 10px 10px;
+  margin: 0;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1rem;
+  padding: 20px 10px 10px;
+  margin: 0;
+  line-height: 1em;
+  border-top: 1px solid #ddd;
 }
 
 .check {
-    padding: 10px;
-    cursor: pointer;
-    display: block;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
 }
 
 .check:hover {
-    background: #eee;
+  background: #eee;
 }
 
 * {
-    -webkit-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+hr {
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
