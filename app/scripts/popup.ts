@@ -1,5 +1,5 @@
 localize();
-initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText"]);
+initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "showCalmText"]);
 
 function localize() {
   var objects = document.getElementsByTagName('html');
@@ -34,16 +34,22 @@ function addClickEventListeners(keys: string[]) {
 }
 
 function toggleChecked(keys: string[]) {
-    chrome.storage.local.get(keys, function(data) {
-        keys.forEach(key => {
-            console.log(key + ": " + data[key]);
-            if (typeof data[key] === "undefined") {
-                data[key] = true;
-            }
-            var input = document.getElementById(key) as HTMLInputElement;
-            input!.checked = data[key];
-        });
+  chrome.storage.local.get(keys, function (data) {
+    keys.forEach(key => {
+      console.log(key + ": " + data[key]);
+      if (key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden") {
+        if (typeof data[key] === "undefined") {
+          data[key] = false;
+        }
+      } else {
+        if (typeof data[key] === "undefined") {
+          data[key] = true;
+        }
+      }
+      var input = document.getElementById(key) as HTMLInputElement;
+      input!.checked = data[key];
     });
+  });
 }
 
 function initValues(keys: string[]) {

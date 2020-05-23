@@ -1,13 +1,19 @@
-toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText"]);
+toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isReactionNumberAlwaysHidden", "isFollowerNumberHidden",]);
 addCalmTitle();
 setTimeout(changeCalmColor, 50);
 
 function toggleClass(keys: string[]) {
-            if (typeof data[key] === "undefined") {
-                data[key] = true;
-            }
   chrome.storage.local.get(keys, function (data) {
     keys.forEach(key => {
+      if (key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden") {
+        if (typeof data[key] === "undefined") {
+          data[key] = false;
+        }
+      } else {
+        if (typeof data[key] === "undefined") {
+          data[key] = true;
+        }
+      }
       let body = document.getElementsByTagName('body')[0];
       if (data[key]) {
         body.classList.add(key);
