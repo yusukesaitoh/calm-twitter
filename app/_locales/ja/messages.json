@@ -18,10 +18,19 @@
     "message": "おすすめトレンド、ユーザーを隠す"
   },
   "titleIsReactionNumberHidden": {
-    "message": "ツイートへのリプライ、リツイート、いいね数を隠す"
+    "message": "ツイートへのリプライ数、リツイート数、いいね数を隠す"
   },
   "titleShowCalmText": {
     "message": "ロゴの隣に「おだやか」を表示する"
+  },
+  "titleIsFollowerNumberHidden": {
+    "message": "フォロワー数を隠す"
+  },
+  "titleIsReactionNumberAlwaysHidden": {
+    "message": "カーソルをツイートにのせてもリプライ数、リツイート数、いいね数を隠す"
+  },
+  "titleAdditionalSettings": {
+    "message": "追加設定"
   },
   "textCalm": {
     "message": "おだやか"
