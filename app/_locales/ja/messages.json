@@ -23,6 +23,9 @@
   "titleShowCalmText": {
     "message": "ロゴの隣に「おだやか」を表示する"
   },
+  "titleIsFollowingNumberHidden": {
+    "message": "フォロー中数を隠す"
+  },
   "titleIsFollowerNumberHidden": {
     "message": "フォロワー数を隠す"
   },
