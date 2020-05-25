@@ -72,6 +72,54 @@ body {
     }
   }
 
+  &.isFollowingNumberHidden {
+    div.r-u8s1d div.r-1upvrn0,
+    div.r-u8s1d div.r-xnswec,
+    div.r-u8s1d div.r-qo02w8 {
+      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b {
+        display: none !important;
+      }
+    }
+
+    div[data-testid="primaryColumn"] > div > div > div > div > div {
+      &
+        > div.css-1dbjc4n.r-dr54s0
+        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b,
+      &
+        > div.css-1dbjc4n.r-1cad53l
+        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b,
+      &
+        > div.css-1dbjc4n.r-ku1wi2
+        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b,
+      &
+        > div.css-1dbjc4n.r-1ifxtd0
+        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b,
+      &
+        > div.css-1dbjc4n.r-le4sbl
+        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
+        > div:first-child
+        > a
+        > span.r-vw2c0b {
+        display: none !important;
+      }
+    }
+  }
+
   &.isFollowerNumberHidden {
     div.r-u8s1d div.r-1upvrn0,
     div.r-u8s1d div.r-xnswec,
