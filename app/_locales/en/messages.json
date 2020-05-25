@@ -27,6 +27,9 @@
   "titleShowCalmText": {
     "message": "Show \"Calm\" next to the logo"
   },
+  "titleIsFollowingNumberHidden": {
+    "message": "Hide number of following"
+  },
   "titleIsFollowerNumberHidden": {
     "message": "Hide number of followers"
   },
