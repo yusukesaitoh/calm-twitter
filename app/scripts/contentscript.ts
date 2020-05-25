@@ -1,6 +1,8 @@
 toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden"]);
 addCalmTitle();
-setTimeout(changeCalmColor, 50);
+for (let i = 0; i < 2; i++) {
+	setTimeout(changeCalmColor, (i + 1)*100);
+}
 
 function toggleClass(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
@@ -42,12 +44,15 @@ function addCalmTitle() {
 
 function changeCalmColor() {
   let body = document.body || document.getElementsByTagName('body')[0];
-  if (body.style.backgroundColor !== 'rgb(255, 255, 255)') {
-    let css = "body.showCalmText header[role=\"banner\"] h1[role=\"heading\"]::after { color: rgb(255, 255, 255);}";
-    let head = document.head || document.getElementsByTagName('head')[0];
-    let style = document.createElement('style');
-    head.appendChild(style);
-    style.type = 'text/css';
-    style.appendChild(document.createTextNode(css));
+  if (body.style.backgroundColor !== null) {
+    const logo = (<HTMLElement>document.querySelector('header[role="banner"] h1[role="heading"] > a svg'));
+    if (logo !== null) {
+      let css = "body.showCalmText header[role=\"banner\"] h1[role=\"heading\"]::after { color: " + window.getComputedStyle(logo).color + ";}";
+      let head = document.head || document.getElementsByTagName('head')[0];
+      let style = document.createElement('style');
+      head.appendChild(style);
+      style.type = 'text/css';
+      style.appendChild(document.createTextNode(css));
+    }
   }
 }
