@@ -12,7 +12,7 @@
     "description": "The title of the browser action button"
   },
   "titleIsExploreHidden": {
-    "message": "話題を検索タブを隠す"
+    "message": "「話題を検索」タブを隠す"
   },
   "titleIsTrendsHidden": {
     "message": "おすすめトレンド、ユーザーを隠す"
