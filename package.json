@@ -24,16 +24,19 @@
     "parser": "babel-eslint"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
     "@types/chrome": "^0.x.x",
     "babel-cli": "6.x.x",
-    "babel-core": "6.x.x",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.x.x",
     "babel-loader": "8.x.x",
     "babel-preset-env": "1.x.x",
+    "babel-preset-es2015": "^6.24.1",
     "babili-webpack-plugin": "0.x.x",
     "chromereload": "0.x.x",
     "del": "5.x.x",
-    "gulp": "4.x.x",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-bump": "3.x.x",
     "gulp-cache": "1.x.x",
     "gulp-clean-css": "^4.x.x",
@@ -59,5 +62,8 @@
     "webpack": "4.x.x",
     "webpack-stream": "5.x.x",
     "yargs": "15.x.x"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0"
   }
 }

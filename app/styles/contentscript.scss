@@ -164,4 +164,14 @@ body {
       }
     }
   }
+
+  &.isRetweetsAndFavsHidden {
+
+    div[data-testid="primaryColumn"] > div > div.css-1dbjc4n > div
+    > section > div > div > div > div > div > div
+    > article > div > div > div > div:nth-child(3)
+    > div.css-1dbjc4n > div.css-1dbjc4n.r-1kfrmmb.r-1efd50x.r-5kkj8d.r-18u37iz.r-tzz3ar.r-ou255f.r-9qu9m4 {
+      display: none !important;
+    }
+  }
 }

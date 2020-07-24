@@ -33,6 +33,9 @@
   "titleIsFollowerNumberHidden": {
     "message": "Hide number of followers"
   },
+  "titleIsRetweetsAndFavsHidden": {
+    "message": "Hide quote retweets, retweets, favs to a tweet"
+  },
   "titleIsReactionNumberAlwaysHidden": {
     "message": "Hide numbers of replies, retweets, and likes when mouse cursor is hovered"
   },

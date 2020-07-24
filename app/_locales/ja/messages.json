@@ -29,6 +29,9 @@
   "titleIsFollowerNumberHidden": {
     "message": "フォロワー数を隠す"
   },
+  "titleIsRetweetsAndFavsHidden": {
+    "message": "ツイートへの引用リツイート、リツイート、いいねを隠す"
+  },
   "titleIsReactionNumberAlwaysHidden": {
     "message": "カーソルをツイートにのせてもリプライ数、リツイート数、いいね数を隠す"
   },
