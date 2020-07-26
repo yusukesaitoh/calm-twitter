@@ -37,7 +37,7 @@ function toggleChecked(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
     keys.forEach(key => {
       console.log(key + ": " + data[key]);
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isRetweetsAndFavsHidden") {
+      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden") {
         if (typeof data[key] === "undefined") {
           data[key] = false;
         }

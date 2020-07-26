@@ -7,7 +7,7 @@ for (let i = 0; i < 2; i++) {
 function toggleClass(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
     keys.forEach(key => {
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isRetweetsAndFavsHidden") {
+      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden") {
         if (typeof data[key] === "undefined") {
           data[key] = false;
         }

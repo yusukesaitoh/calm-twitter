@@ -1,7 +1,7 @@
 {
-  "name": "calm-twitter",
+  "name": "calm-twitter_for_quote_retweets",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "This extension hides trending information from twitter timelines to make your mind calm.",
   "scripts": {
     "start": "npm run dev:chrome",
