@@ -24,7 +24,7 @@
     "default_popup": "pages/popup.html"
   },
   "content_scripts": [{
-    "matches": ["https://twitter.com/*"],
+    "matches": ["https://twitter.com/*","https://mobile.twitter.com/*"],
     "js": ["scripts/contentscript.js"],
     "css": ["styles/contentscript.css"],
     "run_at": "document_end"
