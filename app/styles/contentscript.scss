@@ -83,8 +83,8 @@ body {
         display: none !important;
       }
     }
-
-    div[data-testid="primaryColumn"] > div > div > div > div > div {
+    div[data-testid="primaryColumn"] > div > div > div > div > div,
+    div[data-testid="primaryColumn"] > div > div > div > div > div > div {
       &
         > div.css-1dbjc4n.r-dr54s0
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
@@ -128,8 +128,8 @@ body {
         display: none !important;
       }
     }
-
-    div[data-testid="primaryColumn"] > div > div > div > div > div {
+    div[data-testid="primaryColumn"] > div > div > div > div > div,
+    div[data-testid="primaryColumn"] > div > div > div > div > div > div {
       &
         > div.css-1dbjc4n.r-dr54s0
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
