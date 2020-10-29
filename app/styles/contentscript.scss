@@ -76,10 +76,7 @@ body {
     div.r-u8s1d div.r-1upvrn0,
     div.r-u8s1d div.r-xnswec,
     div.r-u8s1d div.r-qo02w8 {
-      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span.r-vw2c0b {
+      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child {
         display: none !important;
       }
     }
@@ -90,31 +87,31 @@ body {
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:first-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-1cad53l
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:first-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-ku1wi2
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:first-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-1ifxtd0
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:first-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-le4sbl
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:first-child
         > a
-        > span.r-vw2c0b {
+        > span:first-child {
         display: none !important;
       }
     }
@@ -124,7 +121,7 @@ body {
     div.r-u8s1d div.r-1upvrn0,
     div.r-u8s1d div.r-xnswec,
     div.r-u8s1d div.r-qo02w8 {
-      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj > div:last-child > a > span.r-vw2c0b {
+      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj > div:last-child > a > span:first-child {
         display: none !important;
       }
     }
@@ -135,33 +132,51 @@ body {
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:last-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-1cad53l
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:last-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-ku1wi2
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:last-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-1ifxtd0
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:last-child
         > a
-        > span.r-vw2c0b,
+        > span:first-child,
       &
         > div.css-1dbjc4n.r-le4sbl
         > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
         > div:last-child
         > a
-        > span.r-vw2c0b {
+        > span:first-child {
         display: none !important;
       }
+    }
+  }
+
+  &.isWhoToFollowHidden {
+    div[data-testid=primaryColumn] div.css-1dbjc4n[data-testid=UserCell] {
+      display: none;
+    }
+    div[data-testid=primaryColumn] a[href*="/i/connect_people?user_id="] {
+      display: none;
+    }
+  }
+
+  &.isTopicsToFollowHidden {
+    div[data-testid=primaryColumn] a[aria-labelledby*=" topic-name"] {
+      display: none;
+    }
+    div[data-testid=primaryColumn] a[href*="/i/flow/topics_selector"] {
+      display: none;
     }
   }
 }
