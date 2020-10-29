@@ -36,6 +36,12 @@
   "titleIsReactionNumberAlwaysHidden": {
     "message": "Hide numbers of replies, retweets, and likes when mouse cursor is hovered"
   },
+  "titleIsTopicsToFollowHidden": {
+    "message": "Hide Topics to follow"
+  },
+  "titleIsWhoToFollowHidden": {
+    "message": "Hide Who to follow"
+  },
   "titleAdditionalSettings": {
     "message": "Additional settings"
   },
