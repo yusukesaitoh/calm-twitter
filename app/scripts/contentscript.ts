@@ -28,6 +28,7 @@ function toggleClass(keys: string[]) {
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   toggleClass([request.key]);
+  sendResponse();
 });
 
 chrome.runtime.sendMessage({ from: 'content', subject: 'showPageAction' });
