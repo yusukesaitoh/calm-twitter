@@ -163,20 +163,20 @@ body {
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid=primaryColumn] div.css-1dbjc4n[data-testid=UserCell] {
+    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section div.css-1dbjc4n[data-testid=UserCell] {
       display: none;
     }
-    div[data-testid=primaryColumn] a[href*="/i/connect_people?user_id="] {
+    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/connect_people?user_id="] {
       display: none;
     }
   }
 
   &.isTopicsToFollowHidden {
-    div[data-testid=primaryColumn] a[aria-labelledby*=" topic-name"] {
+    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section  a[aria-labelledby*=" topic-name"] {
       display: none;
     }
-    div[data-testid=primaryColumn] a[href*="/i/flow/topics_selector"] {
-      display: none;
+    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/flow/topics_selector"] {
+     display: none;
     }
   }
 }
