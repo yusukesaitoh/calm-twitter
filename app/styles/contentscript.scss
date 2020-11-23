@@ -21,6 +21,11 @@ body {
         section[aria-labelledby^="accessible-list-"] {
           display: none !important;
         }
+        > div:first-child.r-1ihkh82,
+        > div:first-child.r-1uaug3w,
+        > div:first-child.r-1ysxnx4 {
+          display: none !important;
+        }
     }
   }
 
