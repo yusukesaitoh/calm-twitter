@@ -132,10 +132,10 @@ body {
       a[href*="/i/topics/picker/home"] {
         display: none;
       }
-    }
 
-    div[data-testid=primaryColumn] section[aria-labelledby^=accessible-list-]>div[aria-label$=Carousel] {
-      display: none;
+      section[aria-labelledby^=accessible-list-]>div[aria-label$=Carousel] {
+        display: none;
+      }
     }
   }
 }
