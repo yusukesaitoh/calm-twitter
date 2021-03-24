@@ -184,7 +184,13 @@ body {
       display: none;
     }
     div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/flow/topics_selector"] {
-     display: none;
+      display: none;
+    }
+    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/topics/picker/home"] {
+      display: none;
+    }
+    div[data-testid=primaryColumn] section[aria-labelledby^=accessible-list-] > div[aria-label$=Carousel] {
+      display: none;
     }
   }
 }
