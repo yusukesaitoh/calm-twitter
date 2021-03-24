@@ -6,52 +6,39 @@ body {
   }
 
   &.isTrendsHidden {
-    div[data-testid="sidebarColumn"]
-      > div
-      > div
-      > div
-      > div
-      > div.css-1dbjc4n {
-        > div:not(:first-child):not(:last-child):not(:nth-child(3)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
-            display: none !important;
-        }
-        > div:nth-child(3):not(.r-14lw9ot):not(.r-yfoy6g):not(.r-kemksi) {
-          display: none !important;
-        }
-        section[aria-labelledby^="accessible-list-"] {
-          display: none !important;
-        }
-        > div:first-child.r-1ihkh82,
-        > div:first-child.r-1uaug3w,
-        > div:first-child.r-1ysxnx4 {
-          display: none !important;
-        }
+    div[data-testid="sidebarColumn"]>div>div>div>div>div.css-1dbjc4n {
+      >div:not(:first-child):not(:last-child):not(:nth-child(3)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
+        display: none !important;
+      }
+
+      >div:nth-child(3):not(.r-14lw9ot):not(.r-yfoy6g):not(.r-kemksi) {
+        display: none !important;
+      }
+
+      section[aria-labelledby^="accessible-list-"] {
+        display: none !important;
+      }
+
+      >div:first-child.r-1ihkh82,
+      >div:first-child.r-1uaug3w,
+      >div:first-child.r-1ysxnx4 {
+        display: none !important;
+      }
     }
   }
 
   &.isReactionNumberHidden {
-    div[data-testid="primaryColumn"]
-      article
-      div[role="group"]
-      div[role="button"]
-      span {
+    div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
       opacity: 0 !important;
       transition-property: transform, opacity !important;
     }
-    div[data-testid="primaryColumn"]
-      article:hover
-      div[role="group"]
-      div[role="button"]
-      span {
+
+    div[data-testid="primaryColumn"] article:hover div[role="group"] div[role="button"] span {
       opacity: 1 !important;
     }
 
     &.isReactionNumberAlwaysHidden {
-      div[data-testid="primaryColumn"]
-        article:hover
-        div[role="group"]
-        div[role="button"]
-        span {
+      div[data-testid="primaryColumn"] article:hover div[role="group"] div[role="button"] span {
         opacity: 0 !important;
         transition-property: transform, opacity !important;
       }
@@ -70,6 +57,7 @@ body {
         color: rgb(29, 161, 242);
         cursor: default;
         font-family: sans-serif;
+
         @media screen and (max-width: 1279px) {
           margin-top: -0.5em;
           position: relative;
@@ -83,6 +71,7 @@ body {
   }
 
   &.isFollowingNumberHidden {
+
     div.r-u8s1d div.r-1upvrn0,
     div.r-u8s1d div.r-xnswec,
     div.r-u8s1d div.r-qo02w8 {
@@ -90,106 +79,62 @@ body {
         display: none !important;
       }
     }
-    div[data-testid="primaryColumn"] > div > div > div > div > div {
-      &
-        div.css-1dbjc4n.r-dr54s0
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-1cad53l
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-ku1wi2
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-1ifxtd0
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-le4sbl
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:first-child
-        > a
-        > span:first-child {
+
+    div[data-testid="primaryColumn"]>div>div>div>div>div {
+
+      & div.css-1dbjc4n.r-dr54s0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child,
+      & div.css-1dbjc4n.r-1cad53l>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child,
+      & div.css-1dbjc4n.r-ku1wi2>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child,
+      & div.css-1dbjc4n.r-1ifxtd0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child,
+      & div.css-1dbjc4n.r-le4sbl>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span:first-child {
         display: none !important;
       }
     }
   }
 
   &.isFollowerNumberHidden {
+
     div.r-u8s1d div.r-1upvrn0,
     div.r-u8s1d div.r-xnswec,
     div.r-u8s1d div.r-qo02w8 {
-      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj > div:last-child > a > span:first-child {
+      div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child {
         display: none !important;
       }
     }
-    div[data-testid="primaryColumn"] > div > div > div > div > div {
-      &
-        div.css-1dbjc4n.r-dr54s0
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:last-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-1cad53l
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:last-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-ku1wi2
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:last-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-1ifxtd0
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:last-child
-        > a
-        > span:first-child,
-      &
-        div.css-1dbjc4n.r-le4sbl
-        > div.css-1dbjc4n.r-18u37iz.r-1w6e6rj
-        > div:last-child
-        > a
-        > span:first-child {
+
+    div[data-testid="primaryColumn"]>div>div>div>div>div {
+
+      & div.css-1dbjc4n.r-dr54s0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child,
+      & div.css-1dbjc4n.r-1cad53l>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child,
+      & div.css-1dbjc4n.r-ku1wi2>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child,
+      & div.css-1dbjc4n.r-1ifxtd0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child,
+      & div.css-1dbjc4n.r-le4sbl>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span:first-child {
         display: none !important;
       }
     }
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section div.css-1dbjc4n[data-testid=UserCell] {
-      display: none;
-    }
-    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/connect_people?user_id="] {
-      display: none;
+    div[data-testid=primaryColumn]>div>div:nth-child(2)>div>div>div:nth-child(3)>section {
+
+      div.css-1dbjc4n[data-testid=UserCell],
+      a[href*="/i/connect_people?user_id="] {
+        display: none;
+      }
     }
   }
 
   &.isTopicsToFollowHidden {
-    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section  a[aria-labelledby*=" topic-name"] {
-      display: none;
+    div[data-testid=primaryColumn]>div>div:nth-child(2)>div>div>div:nth-child(3)>section {
+
+      a[aria-labelledby*=" topic-name"],
+      a[href*="/i/flow/topics_selector"],
+      a[href*="/i/topics/picker/home"] {
+        display: none;
+      }
     }
-    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/flow/topics_selector"] {
-      display: none;
-    }
-    div[data-testid=primaryColumn] > div > div:nth-child(2) > div > div > div:nth-child(3) > section a[href*="/i/topics/picker/home"] {
-      display: none;
-    }
-    div[data-testid=primaryColumn] section[aria-labelledby^=accessible-list-] > div[aria-label$=Carousel] {
+
+    div[data-testid=primaryColumn] section[aria-labelledby^=accessible-list-]>div[aria-label$=Carousel] {
       display: none;
     }
   }
