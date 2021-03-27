@@ -42,6 +42,9 @@
   "titleIsWhoToFollowHidden": {
     "message": "Hide Who to follow"
   },
+  "titleIsFontChanged": {
+    "message": "Change Japanese font from Meiryo to Hiragino on Mac"
+  },
   "titleAdditionalSettings": {
     "message": "Additional settings"
   },
