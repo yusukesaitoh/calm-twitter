@@ -38,6 +38,9 @@
   "titleIsWhoToFollowHidden": {
     "message": "おすすめユーザーを隠す"
   },
+  "titleIsPromotionTweetHidden": {
+    "message": "プロモーションツイートを隠す"
+  },
   "titleIsFontChanged": {
     "message": "Macで日本語フォントをメイリオからヒラギノに変更"
   },

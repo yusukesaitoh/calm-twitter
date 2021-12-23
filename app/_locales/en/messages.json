@@ -42,6 +42,9 @@
   "titleIsWhoToFollowHidden": {
     "message": "Hide Who to follow"
   },
+  "titleIsPromotionTweetHidden": {
+    "message": "Hide Promotion tweet"
+  },
   "titleIsFontChanged": {
     "message": "Change Japanese font from Meiryo to Hiragino on Mac"
   },
