@@ -1,13 +1,13 @@
-toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 addCalmTitle();
 for (let i = 0; i < 2; i++) {
-	setTimeout(changeCalmColor, (i + 1)*100);
+  setTimeout(changeCalmColor, (i + 1) * 100);
 }
 
 function toggleClass(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
     keys.forEach(key => {
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
+      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isReactionNumberDetailHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
         if (typeof data[key] === "undefined") {
           data[key] = false;
         }

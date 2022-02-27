@@ -1,5 +1,5 @@
 localize();
-initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 
 function localize() {
   var objects = document.getElementsByTagName('html');
@@ -37,7 +37,7 @@ function toggleChecked(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
     keys.forEach(key => {
       console.log(key + ": " + data[key]);
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
+      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isReactionNumberDetailHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
         if (typeof data[key] === "undefined") {
           data[key] = false;
         }
