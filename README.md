@@ -12,6 +12,7 @@ This extension hides trending information from twitter timelines to make your mi
 4. Show "Calm" next to the Twitter logo
 
 Additional features (off by default, can be turned on from settings)
+
 5. Hide the number of following
 6. Hide the number of followers
 7. Hide numbers of replies, retweets, and likes in detail pages
@@ -19,7 +20,6 @@ Additional features (off by default, can be turned on from settings)
 9. Hide Who to follow
 10. Hide Topics to follow
 11. Change Japanese font from Meiryo to Hiragino on Mac
-
 
 ## License
 MIT License
