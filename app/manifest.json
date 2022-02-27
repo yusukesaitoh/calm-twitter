@@ -2,7 +2,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
@@ -23,12 +23,21 @@
     "default_title": "__MSG_browserActionTitle__",
     "default_popup": "pages/popup.html"
   },
-  "content_scripts": [{
-    "matches": ["https://twitter.com/*","https://mobile.twitter.com/*"],
-    "js": ["scripts/contentscript.js"],
-    "css": ["styles/contentscript.css"],
-    "run_at": "document_end"
-  }],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://mobile.twitter.com/*"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "css": [
+        "styles/contentscript.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
   "permissions": [
     "storage"
   ]

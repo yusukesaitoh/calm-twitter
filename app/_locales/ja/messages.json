@@ -32,6 +32,9 @@
   "titleIsReactionNumberAlwaysHidden": {
     "message": "カーソルをツイートにのせてもリプライ数、リツイート数、いいね数を隠す"
   },
+  "titleIsReactionNumberDetailHidden": {
+    "message": "詳細画面でもリプライ数、リツイート数、いいね数を隠す"
+  },
   "titleIsTopicsToFollowHidden": {
     "message": "おすすめトピックを隠す"
   },
