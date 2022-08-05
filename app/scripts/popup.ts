@@ -1,8 +1,22 @@
 localize();
-initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+initValues([
+  "isExploreHidden",
+  "isTrendsHidden",
+  "isReactionNumberHidden",
+  "showCalmText",
+  "isFollowingNumberHidden",
+  "isFollowerNumberHidden",
+  "isReactionNumberAlwaysHidden",
+  "isReactionNumberDetailHidden",
+  "isWhoToFollowHidden",
+  "isTopicsToFollowHidden",
+  "isNotificationHidden",
+  "isMessageNotificationHidden",
+  "isFontChanged",
+]);
 
 function localize() {
-  var objects = document.getElementsByTagName('html');
+  var objects = document.getElementsByTagName("html");
   for (var j = 0; j < objects.length; j++) {
     var obj = objects[j];
 
@@ -15,29 +29,43 @@ function localize() {
       obj.innerHTML = valNewH;
     }
   }
-
 }
 
 function addClickEventListeners(keys: string[]) {
-  keys.forEach(key => {
+  keys.forEach((key) => {
     var input = document.getElementById(key);
-    input!.addEventListener('click', function (event) {
-      var checkbox = event.target as HTMLInputElement;
-      chrome.storage.local.set({ [key]: checkbox!.checked }, function () { });
+    input!.addEventListener(
+      "click",
+      function (event) {
+        var checkbox = event.target as HTMLInputElement;
+        chrome.storage.local.set({ [key]: checkbox!.checked }, function () {});
 
-      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        let tabId = tabs[0].id;
-        chrome.tabs.sendMessage(tabId!, { key: key }, function () { });
-      });
-    }, false);
+        chrome.tabs.query(
+          { active: true, currentWindow: true },
+          function (tabs) {
+            let tabId = tabs[0].id;
+            chrome.tabs.sendMessage(tabId!, { key: key }, function () {});
+          }
+        );
+      },
+      false
+    );
   });
 }
 
 function toggleChecked(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
-    keys.forEach(key => {
+    keys.forEach((key) => {
       console.log(key + ": " + data[key]);
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isReactionNumberDetailHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
+      if (
+        key === "isFollowingNumberHidden" ||
+        key === "isFollowerNumberHidden" ||
+        key === "isReactionNumberAlwaysHidden" ||
+        key === "isReactionNumberDetailHidden" ||
+        key === "isWhoToFollowHidden" ||
+        key === "isTopicsToFollowHidden" ||
+        key === "isFontChanged"
+      ) {
         if (typeof data[key] === "undefined") {
           data[key] = false;
         }
