@@ -27,6 +27,12 @@
   "titleShowCalmText": {
     "message": "Show \"Calm\" next to the logo"
   },
+  "titleIsNotificationHidden": {
+    "message": "Hide Notifications Badge"
+  },
+  "titleIsMessageNotificationHidden": {
+    "message": "Hide Message Notifications Badge"
+  },
   "titleIsFollowingNumberHidden": {
     "message": "Hide number of following"
   },
