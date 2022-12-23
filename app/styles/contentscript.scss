@@ -28,13 +28,13 @@ body {
   }
 
   &.isReactionNumberHidden {
-    div[data-testid="primaryColumn"] article:not(:hover) div[role="group"] div[role="button"] span {
+    div[data-testid="primaryColumn"] article:not(:hover) div[role="group"] span {
       opacity: 0 !important;
       transition-property: transform, opacity !important;
     }
 
     &.isReactionNumberAlwaysHidden {
-      div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
+      div[data-testid="primaryColumn"] article div[role="group"] span {
         opacity: 0 !important;
         transition-property: transform, opacity !important;
       }
