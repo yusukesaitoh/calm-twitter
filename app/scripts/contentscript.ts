@@ -1,4 +1,4 @@
-toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 addCalmTitle();
 for (let i = 0; i < 2; i++) {
   setTimeout(changeCalmColor, (i + 1) * 100);
