@@ -59,9 +59,16 @@ body {
     }
 
     div[role="dialog"] {
-      div[role="group"]:not(:hover) div[role="button"] span {
-        opacity: 0 !important;
-        transition-property: transform, opacity !important;
+      div[role="group"]:not(:hover) div[role="button"] {
+        &[data-testid="reply"] span[data-testid="app-text-transition-container"],
+        &[data-testid="retweet"] span[data-testid="app-text-transition-container"],
+        &[data-testid="unretweet"] span[data-testid="app-text-transition-container"],        
+        &[data-testid="like"] span[data-testid="app-text-transition-container"],        
+        &[data-testid="unlike"] span[data-testid="app-text-transition-container"]
+        {
+          opacity: 0 !important;
+          transition-property: transform, opacity !important;
+        }
       }
       a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
       a[href$="/retweets/with_comments"]:not(:hover) span[data-testid="app-text-transition-container"],
@@ -80,10 +87,17 @@ body {
       }
 
       div[role="dialog"] {
-        div[role="group"] div[role="button"] span {
-          opacity: 0 !important;
-          transition-property: transform, opacity !important;
-        }
+        div[role="group"] div[role="button"] {
+          &[data-testid="reply"] span[data-testid="app-text-transition-container"],
+          &[data-testid="retweet"] span[data-testid="app-text-transition-container"],
+          &[data-testid="unretweet"] span[data-testid="app-text-transition-container"],        
+          &[data-testid="like"] span[data-testid="app-text-transition-container"],        
+          &[data-testid="unlike"] span[data-testid="app-text-transition-container"]
+          {
+            opacity: 0 !important;
+            transition-property: transform, opacity !important;
+          }
+        }  
         a[href$="/retweets"] span[data-testid="app-text-transition-container"],
         a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
         a[href$="/likes"] span[data-testid="app-text-transition-container"] {
