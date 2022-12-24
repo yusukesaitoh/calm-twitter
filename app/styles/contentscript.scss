@@ -41,6 +41,14 @@ body {
     }
   }
 
+  &.isViewCountHidden {
+    div[data-testid="primaryColumn"] article {
+      a[href$="/analytics"] span[data-testid="app-text-transition-container"] {
+        display: none;
+      }
+    }
+  }
+
   &.isReactionNumberDetailHidden {
     div[data-testid="primaryColumn"] article {
       a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
