@@ -20,6 +20,9 @@
   "titleIsReactionNumberHidden": {
     "message": "ツイートへのリプライ数、リツイート数、いいね数を隠す"
   },
+  "titleIsViewCountHidden": {
+    "message": "ツイートの表示数を隠す"
+  },
   "titleShowCalmText": {
     "message": "ロゴの隣に「おだやか」を表示する"
   },
