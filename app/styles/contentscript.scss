@@ -151,7 +151,7 @@ body {
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid="primaryColumn"] > div > div:nth-child(2) > div > div > section:nth-child(3) > div {
+    div[data-testid="primaryColumn"] > div > div:nth-child(3) > div > div > section:nth-child(3) > div {
       div.css-1dbjc4n[data-testid="UserCell"],
       a[href*="/i/connect_people?user_id="] {
         display: none;
@@ -160,7 +160,7 @@ body {
   }
 
   &.isTopicsToFollowHidden {
-    div[data-testid="primaryColumn"] > div > div:nth-child(2) > div > div > section:nth-child(3) > div {
+    div[data-testid="primaryColumn"] > div > div:nth-child(3) > div > div > section:nth-child(3) > div {
       a[aria-labelledby*=" topic-name"],
       a[href*="/i/flow/topics_selector"],
       a[href*="/i/topics/picker/home"] {
