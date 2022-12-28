@@ -42,9 +42,14 @@ body {
   }
 
   &.isViewCountHidden {
-    div[data-testid="primaryColumn"] article {
-      a[href$="/analytics"] span[data-testid="app-text-transition-container"] {
+    article[data-testid="tweet"] {
+      a[href$="/analytics"] {
+        .r-1tl8opc {
+          display: none;
+        }
+        span[data-testid="app-text-transition-container"] {
         display: none;
+        }
       }
     }
   }
