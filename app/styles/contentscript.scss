@@ -43,6 +43,9 @@ body {
 
   &.isViewCountHidden {
     article[data-testid="tweet"] {
+      div.r-1wtj0ep a[href*="/status/"] + span + span  span[data-testid="app-text-transition-container"] {
+        display: none;
+      }
       a[href$="/analytics"] {
         .r-1tl8opc {
           display: none;
