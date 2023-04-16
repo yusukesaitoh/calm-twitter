@@ -55,6 +55,9 @@ body {
         display: none;
         }
       }
+      div:has(>a>time) ~ div span:has(>span)  {
+        display: none;
+      }
     }
   }
 
