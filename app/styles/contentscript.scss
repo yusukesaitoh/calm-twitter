@@ -33,6 +33,10 @@ body {
       transition-property: transform, opacity !important;
     }
 
+    article[data-testid="tweet"] div:has(>div>div>div>div>a>time)  ~ div > div > div:has(>span) {
+      display: none;
+    }
+
     &.isReactionNumberAlwaysHidden {
       div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
         opacity: 0 !important;
@@ -43,16 +47,16 @@ body {
 
   &.isViewCountHidden {
     article[data-testid="tweet"] {
-      div.r-1wtj0ep a[href*="/status/"] + span + span  span[data-testid="app-text-transition-container"] {
+      div.r-1wtj0ep a[href*="/status/"] + span + span span[data-testid="app-text-transition-container"] {
         display: none;
       }
       a[href$="/analytics"] {
-        .r-1tl8opc {
-          display: none;
-        }
         span[data-testid="app-text-transition-container"] {
         display: none;
         }
+      }
+      div:has(>a>time) ~ div span:has(>span)  {
+        display: none;
       }
     }
   }
@@ -128,7 +132,7 @@ body {
         cursor: default;
         font-family: sans-serif;
 
-        @media screen and (max-width: 1279px) {
+        @media screen and (max-width: 1264px) {
           margin-top: -0.5em;
           position: relative;
           width: auto;
