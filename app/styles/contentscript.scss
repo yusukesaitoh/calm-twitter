@@ -33,6 +33,10 @@ body {
       transition-property: transform, opacity !important;
     }
 
+    article[data-testid="tweet"] div:has(>div>div>div>div>a>time)  ~ div > div > div:has(>span) {
+      display: none;
+    }
+
     &.isReactionNumberAlwaysHidden {
       div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
         opacity: 0 !important;
@@ -47,9 +51,6 @@ body {
         display: none;
       }
       a[href$="/analytics"] {
-        .r-1tl8opc {
-          display: none;
-        }
         span[data-testid="app-text-transition-container"] {
         display: none;
         }
