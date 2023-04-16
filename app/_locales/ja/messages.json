@@ -18,7 +18,7 @@
     "message": "おすすめトレンド、ユーザーを隠す"
   },
   "titleIsReactionNumberHidden": {
-    "message": "ツイートへのリプライ数、リツイート数、いいね数を隠す"
+    "message": "ツイートへのリプライ数、リツイート数、いいね数、ブックマーク数を隠す"
   },
   "titleIsViewCountHidden": {
     "message": "ツイートの表示回数を隠す"
