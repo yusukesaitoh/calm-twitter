@@ -1,8 +1,6 @@
 toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 addCalmTitle();
-for (let i = 0; i < 2; i++) {
-  setTimeout(changeCalmColor, (i + 1) * 100);
-}
+setTimeout(changeCalmColor,  250);
 
 function toggleClass(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {
