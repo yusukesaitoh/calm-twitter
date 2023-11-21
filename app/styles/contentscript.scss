@@ -123,12 +123,14 @@ body {
     header[role="banner"] h1[role="heading"] {
       &::after {
         position: absolute;
-        left: 3.75em;
-        top: 1em;
+        left: 3.75rem;
+        top: auto;
+        top: bottom;
         display: inline-block;
         width: 120px;
         font-weight: 700;
-        color: rgb(29, 161, 242);
+        font-size: 1rem;
+        color: #0f1419;
         cursor: default;
         font-family: sans-serif;
 
