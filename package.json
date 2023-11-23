@@ -41,7 +41,7 @@
     "gulp-filter": "^7.0.0",
     "gulp-git": "2.x.x",
     "gulp-if": "3.x.x",
-    "gulp-imagemin": "7.x.x",
+    "gulp-imagemin": "8.x.x",
     "gulp-json-transform": "0.x.x",
     "gulp-less": "5.x.x",
     "gulp-livereload": "4.x.x",
