@@ -2,7 +2,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "manifest_version": 3,
   "default_locale": "en",
   "icons": {
@@ -24,6 +24,7 @@
   "content_scripts": [
     {
       "matches": [
+        "https://x.com/*",
         "https://twitter.com/*",
         "https://mobile.twitter.com/*"
       ],
