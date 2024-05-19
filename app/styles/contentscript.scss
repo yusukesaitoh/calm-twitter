@@ -218,8 +218,8 @@ body {
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid="primaryColumn"] > div > div > div > section > div > div > div > div > div  {
-      div[data-testid="UserCell"],
+    div[data-testid="primaryColumn"] > div > div > div > div > section > div > div > div > div  {
+      *[data-testid="UserCell"],
       a[href*="/i/connect_people?user_id="] {
         display: none;
       }
