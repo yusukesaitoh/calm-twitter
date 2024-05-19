@@ -25,6 +25,7 @@
     {
       "matches": [
         "https://x.com/*",
+        "https://mobile.x.com/*",
         "https://twitter.com/*",
         "https://mobile.twitter.com/*"
       ],
