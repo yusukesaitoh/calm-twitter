@@ -4,7 +4,7 @@
 This extension hides trending information from twitter timelines to make your mind calm.  
 この拡張機能はTwitterのタイムラインからトレンド情報を隠して、あなたの心を穏やかにしてくれます。
 
-![](design/Share_SNS_en.png)
+![](images/about.png)
 
 1. Hide "Explore" tab from the left column
 2. Hide trends and who to follow from the right column

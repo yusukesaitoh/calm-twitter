@@ -7,7 +7,7 @@ body {
 
   &.isTrendsHidden {
     div[data-testid="sidebarColumn"] > div > div > div > div > div.css-175oi2r {
-      > div:not(:first-child):not(:last-child):not(:nth-child(2)):not(:nth-child(3)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
+      > div:not(:first-child):not(:last-child):not(:nth-child(2)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
         display: none !important;
       }
 
@@ -28,19 +28,35 @@ body {
   }
 
   &.isReactionNumberHidden {
-    div[data-testid="primaryColumn"] article:not(:hover) div[role="group"] div[role="button"] span {
-      opacity: 0 !important;
-      transition-property: transform, opacity !important;
-    }
-
-    article[data-testid="tweet"] div:has(>div>div>div>div>a>time)  ~ div > div > div:has(>span) {
-      display: none;
+    div[data-testid="primaryColumn"] article:not(:hover) button {
+      &[data-testid="reply"] ,
+      &[data-testid="retweet"] ,
+      &[data-testid="unretweet"] ,
+      &[data-testid="like"] ,
+      &[data-testid="unlike"],
+      &[data-testid="bookmark"],
+      &[data-testid="removeBookmark"] {
+        span[data-testid="app-text-transition-container"] {
+          opacity: 0 !important;
+          transition-property: transform, opacity !important;
+        }
+      }
     }
 
     &.isReactionNumberAlwaysHidden {
-      div[data-testid="primaryColumn"] article div[role="group"] div[role="button"] span {
-        opacity: 0 !important;
-        transition-property: transform, opacity !important;
+      div[data-testid="primaryColumn"] article button {
+        &[data-testid="reply"] ,
+        &[data-testid="retweet"] ,
+        &[data-testid="unretweet"] ,
+        &[data-testid="like"] ,
+        &[data-testid="unlike"],
+        &[data-testid="bookmark"],
+        &[data-testid="removeBookmark"] {
+          span[data-testid="app-text-transition-container"] {
+            opacity: 0 !important;
+            transition-property: transform, opacity !important;
+          }
+        }
       }
     }
   }
@@ -59,6 +75,13 @@ body {
         display: none;
       }
     }
+    div[role="dialog"] {
+      a[href$="/analytics"] {
+        span[data-testid="app-text-transition-container"] {
+        display: none;
+        }
+      }
+    }
   }
 
   &.isReactionNumberDetailHidden {
@@ -71,15 +94,19 @@ body {
     }
 
     div[role="dialog"] {
-      div[role="group"]:not(:hover) div[role="button"] {
-        &[data-testid="reply"] span[data-testid="app-text-transition-container"],
-        &[data-testid="retweet"] span[data-testid="app-text-transition-container"],
-        &[data-testid="unretweet"] span[data-testid="app-text-transition-container"],        
-        &[data-testid="like"] span[data-testid="app-text-transition-container"],        
-        &[data-testid="unlike"] span[data-testid="app-text-transition-container"]
+      div[role="group"]:not(:hover) button {
+        &[data-testid="reply"],
+        &[data-testid="retweet"],
+        &[data-testid="unretweet"],        
+        &[data-testid="like"],        
+        &[data-testid="unlike"],
+        &[data-testid="bookmark"],
+        &[data-testid="removeBookmark"]
         {
-          opacity: 0 !important;
-          transition-property: transform, opacity !important;
+          span[data-testid="app-text-transition-container"] {
+            opacity: 0 !important;
+            transition-property: transform, opacity !important;
+          }
         }
       }
       a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
@@ -99,17 +126,21 @@ body {
       }
 
       div[role="dialog"] {
-        div[role="group"] div[role="button"] {
-          &[data-testid="reply"] span[data-testid="app-text-transition-container"],
-          &[data-testid="retweet"] span[data-testid="app-text-transition-container"],
-          &[data-testid="unretweet"] span[data-testid="app-text-transition-container"],        
-          &[data-testid="like"] span[data-testid="app-text-transition-container"],        
-          &[data-testid="unlike"] span[data-testid="app-text-transition-container"]
+        div[role="group"] button {
+          &[data-testid="reply"],
+          &[data-testid="retweet"],
+          &[data-testid="unretweet"],        
+          &[data-testid="like"],        
+          &[data-testid="unlike"],
+          &[data-testid="bookmark"],
+          &[data-testid="removeBookmark"]
           {
-            opacity: 0 !important;
-            transition-property: transform, opacity !important;
+            span[data-testid="app-text-transition-container"] {
+              opacity: 0 !important;
+              transition-property: transform, opacity !important;
+            }
           }
-        }  
+          }  
         a[href$="/retweets"] span[data-testid="app-text-transition-container"],
         a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
         a[href$="/likes"] span[data-testid="app-text-transition-container"] {
@@ -187,8 +218,8 @@ body {
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid="primaryColumn"] > div > div > div > section > div > div > div > div > div  {
-      div[data-testid="UserCell"],
+    div[data-testid="primaryColumn"] > div > div > div > div > section > div > div > div > div  {
+      *[data-testid="UserCell"],
       a[href*="/i/connect_people?user_id="] {
         display: none;
       }
