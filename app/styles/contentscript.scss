@@ -59,6 +59,13 @@ body {
         display: none;
       }
     }
+    div[role="dialog"] {
+      a[href$="/analytics"] {
+        span[data-testid="app-text-transition-container"] {
+        display: none;
+        }
+      }
+    }
   }
 
   &.isReactionNumberDetailHidden {
