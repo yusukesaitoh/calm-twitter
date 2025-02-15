@@ -36,7 +36,7 @@ body {
       &[data-testid="unlike"],
       &[data-testid="bookmark"],
       &[data-testid="removeBookmark"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
           opacity: 0 !important;
           transition-property: transform, opacity !important;
         }
@@ -52,7 +52,7 @@ body {
         &[data-testid="unlike"],
         &[data-testid="bookmark"],
         &[data-testid="removeBookmark"] {
-          span[data-testid="app-text-transition-container"] {
+          span {
             opacity: 0 !important;
             transition-property: transform, opacity !important;
           }
@@ -63,11 +63,11 @@ body {
 
   &.isViewCountHidden {
     article[data-testid="tweet"] {
-      div.r-1wtj0ep a[href*="/status/"] + span + span span[data-testid="app-text-transition-container"] {
+      div.r-1wtj0ep a[href*="/status/"] + span + span span {
         display: none;
       }
       a[href$="/analytics"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
         display: none;
         }
       }
@@ -77,7 +77,7 @@ body {
     }
     div[role="dialog"] {
       a[href$="/analytics"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
         display: none;
         }
       }
@@ -86,9 +86,9 @@ body {
 
   &.isReactionNumberDetailHidden {
     div[data-testid="primaryColumn"] article {
-      a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/retweets/with_comments"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/likes"]:not(:hover) span[data-testid="app-text-transition-container"] {
+      a[href$="/retweets"]:not(:hover) span,
+      a[href$="/retweets/with_comments"]:not(:hover) span,
+      a[href$="/likes"]:not(:hover) span {
         display: none;
       }
     }
@@ -103,24 +103,24 @@ body {
         &[data-testid="bookmark"],
         &[data-testid="removeBookmark"]
         {
-          span[data-testid="app-text-transition-container"] {
+          span {
             opacity: 0 !important;
             transition-property: transform, opacity !important;
           }
         }
       }
-      a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/retweets/with_comments"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/likes"]:not(:hover) span[data-testid="app-text-transition-container"] {
+      a[href$="/retweets"]:not(:hover) span,
+      a[href$="/retweets/with_comments"]:not(:hover) span,
+      a[href$="/likes"]:not(:hover) span {
         display: none;
       }
     }
 
     &.isReactionNumberAlwaysHidden {
       div[data-testid="primaryColumn"] article {
-        a[href$="/retweets"] span[data-testid="app-text-transition-container"],
-        a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
-        a[href$="/likes"] span[data-testid="app-text-transition-container"] {
+        a[href$="/retweets"] span,
+        a[href$="/retweets/with_comments"] span,
+        a[href$="/likes"] span {
           display: none;
         }
       }
@@ -135,15 +135,15 @@ body {
           &[data-testid="bookmark"],
           &[data-testid="removeBookmark"]
           {
-            span[data-testid="app-text-transition-container"] {
+            span {
               opacity: 0 !important;
               transition-property: transform, opacity !important;
             }
           }
           }  
-        a[href$="/retweets"] span[data-testid="app-text-transition-container"],
-        a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
-        a[href$="/likes"] span[data-testid="app-text-transition-container"] {
+        a[href$="/retweets"] span,
+        a[href$="/retweets/with_comments"] span,
+        a[href$="/likes"] span {
           display: none;
         }
       }
