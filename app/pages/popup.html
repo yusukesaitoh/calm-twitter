@@ -9,55 +9,110 @@
 
 <body>
   <h1>__MSG_appName__</h1>
-  <label class="check">
-    <input type="checkbox" id="isExploreHidden" checked>
-    <span>__MSG_titleIsExploreHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isTrendsHidden" checked>
-    <span>__MSG_titleIsTrendsHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isReactionNumberHidden" checked>
-    <span>__MSG_titleIsReactionNumberHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isViewCountHidden" checked>
-    <span>__MSG_titleIsViewCountHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="showCalmText" checked>
-    <span>__MSG_titleShowCalmText__</span>
-  </label>
-  <h2>__MSG_titleAdditionalSettings__</h2>
-  <label class="check">
-    <input type="checkbox" id="isFollowingNumberHidden">
-    <span>__MSG_titleIsFollowingNumberHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isFollowerNumberHidden">
-    <span>__MSG_titleIsFollowerNumberHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isReactionNumberDetailHidden">
-    <span>__MSG_titleIsReactionNumberDetailHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isReactionNumberAlwaysHidden">
-    <span>__MSG_titleIsReactionNumberAlwaysHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isWhoToFollowHidden">
-    <span>__MSG_titleIsWhoToFollowHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isTopicsToFollowHidden">
-    <span>__MSG_titleIsTopicsToFollowHidden__</span>
-  </label>
-  <label class="check">
-    <input type="checkbox" id="isFontChanged">
-    <span>__MSG_titleIsFontChanged__</span>
-  </label>
+  <section class="section section-basic">
+    <div class="section-header open">
+      <span class="arrow"></span>
+      <h2 class="section-title">__MSG_titleBasicSettings__</h2>
+      <label class="toggle-all">
+        <input type="checkbox">
+        <span>__MSG_textSelectAll__</span>
+      </label>
+    </div>
+    <div class="feature-section open">
+      <label class="check">
+        <input type="checkbox" id="isTrendsHidden" checked>
+        <span>__MSG_titleIsTrendsHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isReactionNumberHidden" checked>
+        <span>__MSG_titleIsReactionNumberHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isViewCountHidden" checked>
+        <span>__MSG_titleIsViewCountHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="showCalmText" checked>
+        <span>__MSG_titleShowCalmText__</span>
+      </label>
+    </div>
+  </section>
+  <section class="section section-navigation">
+    <div class="section-header open">
+      <span class="arrow"></span>
+      <h2 class="section-title">__MSG_titleNavigationSettings__</h2>
+      <label class="toggle-all">
+        <input type="checkbox">
+        <span>__MSG_textSelectAll__</span>
+      </label>
+    </div>
+    <div class="feature-section open">
+      <label class="check">
+        <input type="checkbox" id="isExploreHidden" checked>
+        <span>__MSG_titleIsExploreHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isGrokHidden" checked>
+        <span>__MSG_titleIsGrokHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isJobsHidden" checked>
+        <span>__MSG_titleIsJobsHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isCommunitiesHidden" checked>
+        <span>__MSG_titleIsCommunitiesHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isPremiumHidden" checked>
+        <span>__MSG_titleIsPremiumHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isVerifiedOrganizationsHidden" checked>
+        <span>__MSG_titleIsVerifiedOrganizationsHidden__</span>
+      </label>
+    </div>
+  </section>
+  <section class="section section-additional">
+    <div class="section-header open">
+      <span class="arrow"></span>
+      <h2 class="section-title">__MSG_titleAdditionalSettings__</h2>
+      <label class="toggle-all">
+        <input type="checkbox">
+        <span>__MSG_textSelectAll__</span>
+      </label>
+    </div>
+    <div class="feature-section open">
+      <label class="check">
+        <input type="checkbox" id="isFollowingNumberHidden">
+        <span>__MSG_titleIsFollowingNumberHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isFollowerNumberHidden">
+        <span>__MSG_titleIsFollowerNumberHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isReactionNumberDetailHidden">
+        <span>__MSG_titleIsReactionNumberDetailHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isReactionNumberAlwaysHidden">
+        <span>__MSG_titleIsReactionNumberAlwaysHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isWhoToFollowHidden">
+        <span>__MSG_titleIsWhoToFollowHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isTopicsToFollowHidden">
+        <span>__MSG_titleIsTopicsToFollowHidden__</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="isFontChanged">
+        <span>__MSG_titleIsFontChanged__</span>
+      </label>
+    </div>
+  </section>
   <script src="../scripts/popup.js"></script>
 </body>
 

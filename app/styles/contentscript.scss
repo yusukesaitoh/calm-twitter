@@ -5,23 +5,47 @@ body {
     }
   }
 
+  &.isGrokHidden {
+    header a[href*="/i/grok"] {
+      display: none !important;
+    }
+
+    div#layers div[data-testid="GrokDrawer"] {
+      display: none !important;
+    }
+  }
+
+
+  &.isPremiumHidden {
+    header a[href*="/i/premium_sign_up"] {
+      display: none !important;
+    }
+  }
+
+  &.isJobsHidden {
+    header a[href*="/jobs"] {
+      display: none !important;
+    }
+  }
+  
+  &.isCommunitiesHidden {
+    header a[href*="/communities"] {
+      display: none !important;
+    }
+  }
+  
+  &.isVerifiedOrganizationsHidden {
+    header a[href*="/i/verified-orgs-signup"] {
+      display: none !important;
+    }
+  }
+  
   &.isTrendsHidden {
-    div[data-testid="sidebarColumn"] > div > div > div > div > div.css-175oi2r {
-      > div:not(:first-child):not(:last-child):not(:nth-child(2)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
-        display: none !important;
-      }
-
-      > div:nth-child(3):not(.r-14lw9ot):not(.r-yfoy6g):not(.r-kemksi) {
-        display: none !important;
-      }
-
-      section[aria-labelledby^="accessible-list-"] {
-        display: none !important;
-      }
-
-      > div:first-child.r-1ihkh82,
-      > div:first-child.r-1uaug3w,
-      > div:first-child.r-1ysxnx4 {
+    div[data-testid="sidebarColumn"] {
+      div:has(> div > aside > a[href="/i/premium_sign_up"]),
+      div:has(> div > aside > ul > li[data-testid="UserCell"]),
+      div:has(> section div > div > div[data-testid="trend"]),
+      div:has(> div[data-testid="placementTracking"] > button div[data-testid="pill-contents-container"] div[data-testid="UserAvatar-Container-unknown"]) {
         display: none !important;
       }
     }
@@ -36,7 +60,7 @@ body {
       &[data-testid="unlike"],
       &[data-testid="bookmark"],
       &[data-testid="removeBookmark"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
           opacity: 0 !important;
           transition-property: transform, opacity !important;
         }
@@ -52,7 +76,7 @@ body {
         &[data-testid="unlike"],
         &[data-testid="bookmark"],
         &[data-testid="removeBookmark"] {
-          span[data-testid="app-text-transition-container"] {
+          span {
             opacity: 0 !important;
             transition-property: transform, opacity !important;
           }
@@ -63,11 +87,11 @@ body {
 
   &.isViewCountHidden {
     article[data-testid="tweet"] {
-      div.r-1wtj0ep a[href*="/status/"] + span + span span[data-testid="app-text-transition-container"] {
+      div.r-1wtj0ep a[href*="/status/"] + span + span span {
         display: none;
       }
       a[href$="/analytics"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
         display: none;
         }
       }
@@ -77,7 +101,7 @@ body {
     }
     div[role="dialog"] {
       a[href$="/analytics"] {
-        span[data-testid="app-text-transition-container"] {
+        span {
         display: none;
         }
       }
@@ -86,9 +110,9 @@ body {
 
   &.isReactionNumberDetailHidden {
     div[data-testid="primaryColumn"] article {
-      a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/retweets/with_comments"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/likes"]:not(:hover) span[data-testid="app-text-transition-container"] {
+      a[href$="/retweets"]:not(:hover) span,
+      a[href$="/retweets/with_comments"]:not(:hover) span,
+      a[href$="/likes"]:not(:hover) span {
         display: none;
       }
     }
@@ -103,24 +127,24 @@ body {
         &[data-testid="bookmark"],
         &[data-testid="removeBookmark"]
         {
-          span[data-testid="app-text-transition-container"] {
+          span {
             opacity: 0 !important;
             transition-property: transform, opacity !important;
           }
         }
       }
-      a[href$="/retweets"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/retweets/with_comments"]:not(:hover) span[data-testid="app-text-transition-container"],
-      a[href$="/likes"]:not(:hover) span[data-testid="app-text-transition-container"] {
+      a[href$="/retweets"]:not(:hover) span,
+      a[href$="/retweets/with_comments"]:not(:hover) span,
+      a[href$="/likes"]:not(:hover) span {
         display: none;
       }
     }
 
     &.isReactionNumberAlwaysHidden {
       div[data-testid="primaryColumn"] article {
-        a[href$="/retweets"] span[data-testid="app-text-transition-container"],
-        a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
-        a[href$="/likes"] span[data-testid="app-text-transition-container"] {
+        a[href$="/retweets"] span,
+        a[href$="/retweets/with_comments"] span,
+        a[href$="/likes"] span {
           display: none;
         }
       }
@@ -135,15 +159,15 @@ body {
           &[data-testid="bookmark"],
           &[data-testid="removeBookmark"]
           {
-            span[data-testid="app-text-transition-container"] {
+            span {
               opacity: 0 !important;
               transition-property: transform, opacity !important;
             }
           }
           }  
-        a[href$="/retweets"] span[data-testid="app-text-transition-container"],
-        a[href$="/retweets/with_comments"] span[data-testid="app-text-transition-container"],
-        a[href$="/likes"] span[data-testid="app-text-transition-container"] {
+        a[href$="/retweets"] span,
+        a[href$="/retweets/with_comments"] span,
+        a[href$="/likes"] span {
           display: none;
         }
       }

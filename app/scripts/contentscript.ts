@@ -1,57 +1,107 @@
-toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
-addCalmTitle();
-setTimeout(changeCalmColor,  250);
+import { DEFAULT_SETTINGS, SettingKey } from "./constants";
 
-function toggleClass(keys: string[]) {
-  chrome.storage.local.get(keys, function (data) {
-    keys.forEach(key => {
-      if (key === "isFollowingNumberHidden" || key === "isFollowerNumberHidden" || key === "isReactionNumberAlwaysHidden" || key === "isReactionNumberDetailHidden" || key === "isWhoToFollowHidden" || key === "isTopicsToFollowHidden" || key === "isFontChanged") {
-        if (typeof data[key] === "undefined") {
-          data[key] = false;
-        }
-      } else {
-        if (typeof data[key] === "undefined") {
-          data[key] = true;
-        }
-      }
-      let body = document.getElementsByTagName('body')[0];
-      if (data[key]) {
-        body.classList.add(key);
-      } else {
-        body.classList.remove(key);
-      }
+type MessageType =
+  | {
+      type: "UPDATE_SETTINGS";
+      settings: Record<string, boolean>;
+    }
+  | {
+      type: "OTHER_ACTION";
+      data: unknown;
+    };
+
+// 初期化
+initializeSettings();
+setupCalmText();
+
+// 設定の初期化
+async function initializeSettings() {
+  const keys = Object.keys(DEFAULT_SETTINGS) as SettingKey[];
+  const data = await getStorageValues(keys);
+  applySettings(data);
+}
+
+// ストレージから設定値を取得
+function getStorageValues(
+  keys: SettingKey[]
+): Promise<Record<SettingKey, boolean>> {
+  return new Promise((resolve) => {
+    chrome.storage.local.get(keys, (data) => {
+      const settings = keys.reduce(
+        (acc, key) => ({
+          ...acc,
+          [key]: data[key] ?? DEFAULT_SETTINGS[key],
+        }),
+        {} as Record<SettingKey, boolean>
+      );
+      resolve(settings);
     });
   });
 }
 
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  toggleClass([request.key]);
-  sendResponse();
-});
-
-chrome.runtime.sendMessage({ from: 'content', subject: 'showPageAction' });
-
-function addCalmTitle() {
-  let calmText = chrome.i18n.getMessage("textCalm");
-  let css = "body.showCalmText header[role=\"banner\"] h1[role=\"heading\"]::after { content:\"" + calmText + "\";}";
-  let head = document.head || document.getElementsByTagName('head')[0];
-  let style = document.createElement('style');
-  head.appendChild(style);
-  style.type = 'text/css';
-  style.appendChild(document.createTextNode(css));
+// 設定の適用
+function applySettings(settings: Record<SettingKey, boolean>) {
+  const body = document.body;
+  Object.entries(settings).forEach(([key, enabled]) => {
+    body.classList.toggle(key, enabled);
+  });
 }
 
-function changeCalmColor() {
-  let body = document.body || document.getElementsByTagName('body')[0];
-  if (body.style.backgroundColor !== null) {
-    const logo = (<HTMLElement>document.querySelector('header[role="banner"] h1[role="heading"] > a svg'));
-    if (logo !== null) {
-      let css = "body.showCalmText header[role=\"banner\"] h1[role=\"heading\"]::after { color: " + window.getComputedStyle(logo).color + ";}";
-      let head = document.head || document.getElementsByTagName('head')[0];
-      let style = document.createElement('style');
-      head.appendChild(style);
-      style.type = 'text/css';
-      style.appendChild(document.createTextNode(css));
+// メッセージリスナー
+chrome.runtime.onMessage.addListener(
+  (request: MessageType, sender, sendResponse) => {
+    if (request.type === "UPDATE_SETTINGS") {
+      const settingEntries = Object.entries(request.settings);
+      for (const [key, value] of settingEntries) {
+        if (Object.keys(DEFAULT_SETTINGS).includes(key)) {
+          document.body.classList.toggle(key, value);
+        }
+      }
     }
+    sendResponse({ success: true });
   }
+);
+
+// 拡張機能のアクティブ化通知
+chrome.runtime.sendMessage({ from: "content", subject: "showPageAction" });
+
+// Calm Text機能
+function setupCalmText() {
+  addCalmText();
+  setTimeout(updateCalmTextColor, 250);
+}
+
+function addCalmText() {
+  const calmText = chrome.i18n.getMessage("textCalm");
+  if (!calmText) return;
+
+  addStyle(`
+    body.showCalmText header[role="banner"] h1[role="heading"]::after {
+      content: "${calmText}";
+    }
+  `);
+}
+
+function updateCalmTextColor() {
+  const logo = document.querySelector<HTMLElement>(
+    'header[role="banner"] h1[role="heading"] > a svg'
+  );
+  if (!logo) return;
+
+  const color = window.getComputedStyle(logo).color;
+  if (!color) return;
+
+  addStyle(`
+    body.showCalmText header[role="banner"] h1[role="heading"]::after {
+      color: ${color};
+    }
+  `);
+}
+
+// ユーティリティ関数
+function addStyle(css: string) {
+  const style = document.createElement("style");
+  style.type = "text/css";
+  style.textContent = css;
+  document.head.appendChild(style);
 }
