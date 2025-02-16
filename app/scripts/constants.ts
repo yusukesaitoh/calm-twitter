@@ -11,11 +11,16 @@ export const DEFAULT_SETTINGS = {
   isWhoToFollowHidden: false,
   isTopicsToFollowHidden: false,
   isFontChanged: false,
+  isGrokHidden: true,
+  isJobsHidden: true,
+  isCommunitiesHidden: true,
+  isPremiumHidden: true,
+  isVerifiedOrganizationsHidden: true,
 } as const;
 
 export const SECTION_STATES = {
   openSectionBasic: true,
-  openSectionX: true,
+  openSectionNavigation: true,
   openSectionAdditional: true,
 } as const;
 

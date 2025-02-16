@@ -5,23 +5,47 @@ body {
     }
   }
 
+  &.isGrokHidden {
+    header a[href*="/i/grok"] {
+      display: none !important;
+    }
+
+    div#layers div[data-testid="GrokDrawer"] {
+      display: none !important;
+    }
+  }
+
+
+  &.isPremiumHidden {
+    header a[href*="/i/premium_sign_up"] {
+      display: none !important;
+    }
+  }
+
+  &.isJobsHidden {
+    header a[href*="/jobs"] {
+      display: none !important;
+    }
+  }
+  
+  &.isCommunitiesHidden {
+    header a[href*="/communities"] {
+      display: none !important;
+    }
+  }
+  
+  &.isVerifiedOrganizationsHidden {
+    header a[href*="/i/verified-orgs-signup"] {
+      display: none !important;
+    }
+  }
+  
   &.isTrendsHidden {
-    div[data-testid="sidebarColumn"] > div > div > div > div > div.css-175oi2r {
-      > div:not(:first-child):not(:last-child):not(:nth-child(2)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
-        display: none !important;
-      }
-
-      > div:nth-child(3):not(.r-14lw9ot):not(.r-yfoy6g):not(.r-kemksi) {
-        display: none !important;
-      }
-
-      section[aria-labelledby^="accessible-list-"] {
-        display: none !important;
-      }
-
-      > div:first-child.r-1ihkh82,
-      > div:first-child.r-1uaug3w,
-      > div:first-child.r-1ysxnx4 {
+    div[data-testid="sidebarColumn"] {
+      div:has(> div > aside > a[href="/i/premium_sign_up"]),
+      div:has(> div > aside > ul > li[data-testid="UserCell"]),
+      div:has(> section div > div > div[data-testid="trend"]),
+      div:has(> div[data-testid="placementTracking"] > button div[data-testid="pill-contents-container"] div[data-testid="UserAvatar-Container-unknown"]) {
         display: none !important;
       }
     }

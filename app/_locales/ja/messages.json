@@ -11,9 +11,6 @@
     "message": "おだやかTwitter",
     "description": "The title of the browser action button"
   },
-  "titleIsExploreHidden": {
-    "message": "「話題を検索」タブを隠す"
-  },
   "titleIsTrendsHidden": {
     "message": "おすすめトレンド、ユーザーを隠す"
   },
@@ -47,8 +44,29 @@
   "titleIsFontChanged": {
     "message": "Macで日本語フォントをメイリオからヒラギノに変更"
   },
+  "titleIsExploreHidden": {
+    "message": "話題を検索を隠す"
+  },
+  "titleIsGrokHidden": {
+    "message": "Grokを隠す"
+  },
+  "titleIsJobsHidden": {
+    "message": "求人を隠す"
+  },
+  "titleIsCommunitiesHidden": {
+    "message": "コミュニティを隠す"
+  },
+  "titleIsPremiumHidden": {
+    "message": "プレミアムを隠す"
+  },
+  "titleIsVerifiedOrganizationsHidden": {
+    "message": "認証済み組織を隠す"
+  },
   "titleBasicSettings": {
     "message": "基本設定"
+  },
+  "titleNavigationSettings": {
+    "message": "ナビゲーション設定"
   },
   "titleAdditionalSettings": {
     "message": "追加設定"

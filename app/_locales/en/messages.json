@@ -15,9 +15,6 @@
     "message": "Calm Twitter",
     "description": "The title of the browser action button"
   },
-  "titleIsExploreHidden": {
-    "message": "Hide explore tab"
-  },
   "titleIsTrendsHidden": {
     "message": "Hide trends and who to follow from right column"
   },
@@ -51,8 +48,29 @@
   "titleIsFontChanged": {
     "message": "Change Japanese font from Meiryo to Hiragino on Mac"
   },
+  "titleIsExploreHidden": {
+    "message": "Hide Explore"
+  },
+  "titleIsGrokHidden": {
+    "message": "Hide Grok"
+  },
+  "titleIsJobsHidden": {
+    "message": "Hide Jobs"
+  },
+  "titleIsCommunitiesHidden": {
+    "message": "Hide Communities"
+  },
+  "titleIsPremiumHidden": {
+    "message": "Hide Premium"
+  },
+  "titleIsVerifiedOrganizationsHidden": {
+    "message": "Hide Verified Organizations"
+  },
   "titleBasicSettings": {
     "message": "Basic settings"
+  },
+  "titleNavigationSettings": {
+    "message": "Navigation settings"
   },
   "titleAdditionalSettings": {
     "message": "Additional settings"

@@ -220,10 +220,6 @@ function updateSectionToggle(sectionName: string): void {
   if (!toggleCheckbox || checkboxes.length === 0) return;
 
   const checkedCount = Array.from(checkboxes).filter((cb) => cb.checked).length;
-
-  console.log("checkboxes.length: " + checkboxes.length);
-  console.log("checkedCount: " + checkedCount);
-
   toggleCheckbox.checked = checkedCount === checkboxes.length;
   toggleCheckbox.indeterminate =
     checkedCount > 0 && checkedCount < checkboxes.length;
