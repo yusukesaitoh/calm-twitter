@@ -22,7 +22,7 @@
     "message": "Hide trends and who to follow from right column"
   },
   "titleIsReactionNumberHidden": {
-    "message": "Hide numbers of replies, retweets, likes, and bookmarks"
+    "message": "Hide numbers of reactions"
   },
   "titleIsViewCountHidden": {
     "message": "Hide View Counts"
@@ -37,10 +37,10 @@
     "message": "Hide number of followers"
   },
   "titleIsReactionNumberAlwaysHidden": {
-    "message": "Hide numbers of replies, retweets, and likes when mouse cursor is hovered"
+    "message": "Hide numbers of reactions when mouse cursor is hovered"
   },
   "titleIsReactionNumberDetailHidden": {
-    "message": "Hide numbers of replies, retweets, and likes in detail pages"
+    "message": "Hide numbers of reactions in detail pages"
   },
   "titleIsTopicsToFollowHidden": {
     "message": "Hide Topics to follow"
@@ -51,8 +51,14 @@
   "titleIsFontChanged": {
     "message": "Change Japanese font from Meiryo to Hiragino on Mac"
   },
+  "titleBasicSettings": {
+    "message": "Basic settings"
+  },
   "titleAdditionalSettings": {
     "message": "Additional settings"
+  },
+  "textSelectAll": {
+    "message": "Select all"
   },
   "textCalm": {
     "message": "Calm"

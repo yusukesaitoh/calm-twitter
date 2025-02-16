@@ -18,7 +18,7 @@
     "message": "おすすめトレンド、ユーザーを隠す"
   },
   "titleIsReactionNumberHidden": {
-    "message": "ツイートへのリプライ数、リツイート数、いいね数、ブックマーク数を隠す"
+    "message": "ツイートへのリアクション数を隠す"
   },
   "titleIsViewCountHidden": {
     "message": "ツイートの表示回数を隠す"
@@ -33,10 +33,10 @@
     "message": "フォロワー数を隠す"
   },
   "titleIsReactionNumberAlwaysHidden": {
-    "message": "カーソルをツイートにのせてもリプライ数、リツイート数、いいね数を隠す"
+    "message": "カーソルをツイートにのせてもリアクション数を隠す"
   },
   "titleIsReactionNumberDetailHidden": {
-    "message": "詳細画面でもリプライ数、リツイート数、いいね数を隠す"
+    "message": "詳細画面でもリアクション数を隠す"
   },
   "titleIsTopicsToFollowHidden": {
     "message": "おすすめトピックを隠す"
@@ -47,8 +47,14 @@
   "titleIsFontChanged": {
     "message": "Macで日本語フォントをメイリオからヒラギノに変更"
   },
+  "titleBasicSettings": {
+    "message": "基本設定"
+  },
   "titleAdditionalSettings": {
     "message": "追加設定"
+  },
+  "textSelectAll": {
+    "message": "すべて選択"
   },
   "textCalm": {
     "message": "おだやか"
