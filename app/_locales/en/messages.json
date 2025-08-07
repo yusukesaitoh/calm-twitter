@@ -16,7 +16,7 @@
     "description": "The title of the browser action button"
   },
   "titleIsTrendsHidden": {
-    "message": "Hide trends and who to follow from right column"
+    "message": "Hide trends, who to follow, subscribe, and news from right column"
   },
   "titleIsReactionNumberHidden": {
     "message": "Hide numbers of reactions"
