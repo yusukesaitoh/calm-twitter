@@ -1,8 +1,22 @@
 
+# OS generated files
 .DS_Store
 
+# Dependencies
 node_modules
-npm-debug.log
 
+# Logs
+npm-debug.log
+*.log
+
+# Build output
 dist/
 packages/
+
+# Vite
+.vite/
+*.local
+
+# IDE
+.vscode/
+.idea/
