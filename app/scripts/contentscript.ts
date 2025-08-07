@@ -1,4 +1,5 @@
 import { DEFAULT_SETTINGS, SettingKey } from "./constants";
+import "../styles/contentscript.scss";
 
 type MessageType =
   | {
