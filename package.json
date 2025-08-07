@@ -9,8 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "standard",
-    "build:old": "gulp pack --production --vendor=chrome",
-    "dev:old": "gulp --watch --vendor=chrome"
+    "package": "npm run build && npm run zip",
+    "zip": "mkdir -p packages && cd dist && zip -r ../packages/calm-twitter-v$npm_package_version.zip . -x '**/.DS_Store' -x '__MACOSX/*' -x '.vite/*' && cd .. && echo 'Created packages/calm-twitter-v'$npm_package_version'.zip'"
   },
   "standard": {
     "globals": [
