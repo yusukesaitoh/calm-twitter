@@ -1,64 +1,31 @@
 {
   "name": "calm-twitter",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "This extension hides trending information from twitter timelines to make your mind calm.",
   "scripts": {
-    "start": "npm run dev:chrome",
-    "build": "npm run build:chrome",
-    "build:chrome": "gulp pack --production --vendor=chrome",
-    "build:firefox": "gulp pack --production --vendor=firefox",
-    "build:opera": "gulp pack --production --vendor=opera",
-    "build:edge": "gulp pack --production --vendor=edge",
-    "dev": "npm run dev:chrome",
-    "dev:chrome": "gulp --watch --vendor=chrome",
-    "dev:firefox": "gulp --watch --vendor=firefox",
-    "dev:opera": "gulp --watch --vendor=opera",
-    "dev:edge": "gulp --watch --vendor=edge",
-    "lint": "standard"
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "standard",
+    "build:old": "gulp pack --production --vendor=chrome",
+    "dev:old": "gulp --watch --vendor=chrome"
   },
   "standard": {
     "globals": [
       "chrome"
-    ],
-    "parser": "babel-eslint"
+    ]
   },
   "devDependencies": {
+    "@crxjs/vite-plugin": "^2.1.0",
     "@types/chrome": "^0.x.x",
-    "babel-cli": "6.x.x",
-    "babel-core": "6.x.x",
-    "babel-eslint": "^10.x.x",
-    "babel-loader": "8.x.x",
-    "babel-preset-env": "1.x.x",
-    "babel-preset-minify": "^0.5.1",
-    "chromereload": "0.x.x",
-    "del": "6.x.x",
-    "gulp": "4.x.x",
-    "gulp-bump": "3.x.x",
-    "gulp-cache": "1.x.x",
-    "gulp-clean-css": "^4.x.x",
-    "gulp-filter": "^7.0.0",
-    "gulp-git": "2.x.x",
-    "gulp-if": "3.x.x",
-    "gulp-imagemin": "7.x.x",
-    "gulp-json-transform": "0.x.x",
-    "gulp-less": "5.x.x",
-    "gulp-livereload": "4.x.x",
-    "gulp-plumber": "1.x.x",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.x.x",
-    "gulp-tag-version": "1.x.x",
-    "gulp-util": "3.x.x",
-    "gulp-zip": "5.x.x",
-    "require-dir": "1.x.x",
     "sass": "^1.49.9",
     "standard": "16.x.x",
-    "ts-loader": "^9.x.x",
     "tslint": "^6.x.x",
-    "typescript": "^4.x.x",
-    "vinyl-named": "1.x.x",
-    "webpack": "5.x.x",
-    "webpack-stream": "7.x.x",
-    "yargs": "17.x.x"
+    "vite": "^7.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.45.0"
   }
 }

@@ -45,7 +45,9 @@ body {
       div:has(> div > aside > a[href="/i/premium_sign_up"]),
       div:has(> div > aside > ul > li[data-testid="UserCell"]),
       div:has(> section div > div > div[data-testid="trend"]),
-      div:has(> div[data-testid="placementTracking"] > button div[data-testid="pill-contents-container"] div[data-testid="UserAvatar-Container-unknown"]) {
+      div:has(> div[data-testid="placementTracking"] > button div[data-testid="pill-contents-container"] div[data-testid="UserAvatar-Container-unknown"]),
+      div[data-testid="super-upsell-UpsellCardRenderProperties"],
+      div:has(> div[data-testid="news_sidebar"]) {
         display: none !important;
       }
     }
@@ -189,7 +191,7 @@ body {
         cursor: default;
         font-family: sans-serif;
 
-        @media screen and (max-width: 1264px) {
+        @media screen and (max-width: 1294px) {
           margin-top: -0.5em;
           position: relative;
           width: auto;

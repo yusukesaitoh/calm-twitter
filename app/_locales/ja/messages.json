@@ -12,7 +12,7 @@
     "description": "The title of the browser action button"
   },
   "titleIsTrendsHidden": {
-    "message": "おすすめトレンド、ユーザーを隠す"
+    "message": "おすすめトレンド、ユーザー、サブスクライブ、ニュースを隠す"
   },
   "titleIsReactionNumberHidden": {
     "message": "ツイートへのリアクション数を隠す"
