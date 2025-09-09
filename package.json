@@ -23,7 +23,7 @@
     "sass": "^1.49.9",
     "standard": "16.x.x",
     "tslint": "^6.x.x",
-    "vite": "^7.1.0"
+    "vite": "^7.1.5"
   },
   "dependencies": {
     "core-js": "^3.45.0"
