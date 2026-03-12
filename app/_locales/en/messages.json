@@ -15,6 +15,9 @@
     "message": "Calm Twitter",
     "description": "The title of the browser action button"
   },
+  "titleIsForYouHidden": {
+    "message": "Hide \"For You\" timeline tab"
+  },
   "titleIsTrendsHidden": {
     "message": "Hide trends, who to follow, subscribe, and news from right column"
   },

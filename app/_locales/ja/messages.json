@@ -11,6 +11,9 @@
     "message": "おだやかTwitter",
     "description": "The title of the browser action button"
   },
+  "titleIsForYouHidden": {
+    "message": "「おすすめ」タイムラインタブを隠す"
+  },
   "titleIsTrendsHidden": {
     "message": "おすすめトレンド、ユーザー、サブスクライブ、ニュースを隠す"
   },
