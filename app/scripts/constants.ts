@@ -16,6 +16,7 @@ export const DEFAULT_SETTINGS = {
   isCommunitiesHidden: true,
   isPremiumHidden: true,
   isVerifiedOrganizationsHidden: true,
+  isForYouHidden: true,
 } as const;
 
 export const SECTION_STATES = {

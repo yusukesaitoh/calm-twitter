@@ -40,6 +40,12 @@ body {
     }
   }
   
+  &.isForYouHidden {
+    div[data-testid="primaryColumn"] div[role="tablist"] > div:first-child {
+      display: none !important;
+    }
+  }
+
   &.isTrendsHidden {
     div[data-testid="sidebarColumn"] {
       div:has(> div > aside > a[href="/i/premium_sign_up"]),
