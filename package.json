@@ -22,7 +22,6 @@
     "@types/chrome": "^0.x.x",
     "sass": "^1.49.9",
     "standard": "16.x.x",
-    "tslint": "^6.x.x",
     "vite": "^7.3.6"
   },
   "dependencies": {
