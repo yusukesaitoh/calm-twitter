@@ -12,10 +12,8 @@ export const DEFAULT_SETTINGS = {
   isTopicsToFollowHidden: false,
   isFontChanged: false,
   isGrokHidden: true,
-  isJobsHidden: true,
-  isCommunitiesHidden: true,
   isPremiumHidden: true,
-  isVerifiedOrganizationsHidden: true,
+  isCreatorStudioHidden: false,
 } as const;
 
 export const SECTION_STATES = {

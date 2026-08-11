@@ -1,7 +1,7 @@
 {
   "name": "calm-twitter",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "This extension hides trending information from twitter timelines to make your mind calm.",
   "scripts": {
     "start": "npm run dev",
@@ -18,12 +18,11 @@
     ]
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.1.0",
+    "@crxjs/vite-plugin": "^2.7.1",
     "@types/chrome": "^0.x.x",
     "sass": "^1.49.9",
-    "standard": "16.x.x",
-    "tslint": "^6.x.x",
-    "vite": "^7.1.0"
+    "standard": "^17.1.2",
+    "vite": "^7.3.6"
   },
   "dependencies": {
     "core-js": "^3.45.0"

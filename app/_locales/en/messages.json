@@ -54,17 +54,11 @@
   "titleIsGrokHidden": {
     "message": "Hide Grok"
   },
-  "titleIsJobsHidden": {
-    "message": "Hide Jobs"
-  },
-  "titleIsCommunitiesHidden": {
-    "message": "Hide Communities"
-  },
   "titleIsPremiumHidden": {
     "message": "Hide Premium"
   },
-  "titleIsVerifiedOrganizationsHidden": {
-    "message": "Hide Verified Organizations"
+  "titleIsCreatorStudioHidden": {
+    "message": "Hide Creator Studio"
   },
   "titleBasicSettings": {
     "message": "Basic settings"
