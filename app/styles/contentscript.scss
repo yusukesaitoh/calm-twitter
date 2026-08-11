@@ -217,9 +217,10 @@ body {
   }
 
   &.isWhoToFollowHidden {
-    div[data-testid="primaryColumn"] > div > div > div > div > section > div > div > div > div  {
-      *[data-testid="UserCell"],
-      a[href*="/i/connect_people?user_id="] {
+    div[data-testid="primaryColumn"] {
+      section:has(a[href*="/i/connect_people"]) *[data-testid="UserCell"],
+      section:has(a[href*="/i/connect_people"]) div[data-testid="cellInnerDiv"]:has(h2),
+      a[href*="/i/connect_people"] {
         display: none;
       }
     }
