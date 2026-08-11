@@ -50,17 +50,11 @@
   "titleIsGrokHidden": {
     "message": "Grokを隠す"
   },
-  "titleIsJobsHidden": {
-    "message": "求人を隠す"
-  },
-  "titleIsCommunitiesHidden": {
-    "message": "コミュニティを隠す"
-  },
   "titleIsPremiumHidden": {
     "message": "プレミアムを隠す"
   },
-  "titleIsVerifiedOrganizationsHidden": {
-    "message": "認証済み組織を隠す"
+  "titleIsCreatorStudioHidden": {
+    "message": "クリエイタースタジオを隠す"
   },
   "titleBasicSettings": {
     "message": "基本設定"
