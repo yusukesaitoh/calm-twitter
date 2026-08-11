@@ -23,10 +23,8 @@ This extension hides trending information from twitter timelines to make your mi
 
 ### Navigation
 - Hide Grok
-- Hide Jobs
-- Hide Communities
 - Hide Premium
-- Hide Verified Organizations
+- Hide Creator Studio
 
 ### User Numbers
 - Hide the number of following
