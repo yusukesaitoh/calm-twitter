@@ -13,7 +13,7 @@ export const DEFAULT_SETTINGS = {
   isFontChanged: false,
   isGrokHidden: true,
   isPremiumHidden: true,
-  isCreatorStudioHidden: true,
+  isCreatorStudioHidden: false,
 } as const;
 
 export const SECTION_STATES = {
