@@ -36,7 +36,7 @@ body {
       div:has(> div[data-testid="placementTracking"] > button div[data-testid="pill-contents-container"] div[data-testid="UserAvatar-Container-unknown"]),
       div[data-testid="super-upsell-UpsellCardRenderProperties"],
       div:has(> div[data-testid="news_sidebar"]) {
-        display: none !important;
+        visibility: hidden !important;
       }
     }
   }
