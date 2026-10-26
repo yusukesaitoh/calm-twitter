@@ -22,7 +22,7 @@
     "@types/chrome": "^0.x.x",
     "sass": "^1.49.9",
     "standard": "^17.1.2",
-    "vite": "^7.3.6"
+    "vite": "^7.3.7"
   },
   "dependencies": {
     "core-js": "^3.45.0"
